@@ -1,0 +1,16 @@
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+    # Add deployment steps here, such as setting up your environment, building your application, and deploying to a cloud provider.
